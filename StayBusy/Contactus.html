@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Contact US</title>
+      <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+      <style type="text/css">
+      
+      	body{
+      	background-color: black;
+        width: 300px
+        height: 450px
+        margin: 0;
+        text-align: center;
+      	}
+
+        p{
+        font-size: 18px;
+        line-height: 30px;
+        color: white;
+
+        }
+
+        h3{
+        font-family: 'lato', sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        }
+
+        form{
+         
+        margin: auto;
+        position: relative;
+        width: 550px;
+        height: 450px;
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 14px;
+        font-style: italic;
+        line-height: 24px;
+        font-weight: bold;
+        color: #09C;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 10px;
+        border: 2px solid #999;
+        border: inset 1px solid #333;
+        -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);  
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        input{
+        margin: auto;
+        padding-bottom: 5px;
+        width: 375px;
+        display: block;
+        border: 2px solid #999;
+        background: transparent;
+        height: 25px;
+        -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+        }
+
+       #contName{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        }
+
+       #contMail{
+        margin-bottom: 20px;
+        }
+
+
+        textarea{
+        margin: auto;
+        margin-bottom: 20px;
+        width: 375px;
+        height: 250px;
+        display: block;
+        background: transparent;
+        }
+
+        #contSubmit {
+        margin: auto;
+        width: 100px;
+        background: black;
+        color: #fff;
+        font-family: Tahoma, Geneva, sans-serif;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #999;
+        }
+
+        #contSubmit:hover {
+        background: #fff;
+        color: #000;
+        border: 1px solid #000;
+        }
+
+        
+
+
+      </style>
+    </head>
+    
+    <body>
+
+    	<section id="talk-back" class="contact-us"> <!-- ## Start CONTACT US Section ## -->
+            <div class="row">
+              <div class="col-xs-12">
+                <h3>Get In Touch</h3>
+                <p>This is Stay Busy! We are here to help you become better.<br>How can we help you?</p>
+                <p class="contact-label sven-message"></p>
+                <form id="contact-form" class="row" action="php/contact.php" method="POST"><!-- %% Start CONTACT FORM %% -->
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                      <input type="text" id="contName" class="form form-control" placeholder="Your Name..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name...'" name="contName" required="">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                      <input type="email" id="contMail" class="form form-control" placeholder="Your Email..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email...'" name="contMail" required="">
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form-group">
+                      <textarea id="contMessage" class="form form-control" placeholder="Your Message..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Message...'" name="contMessage" required=""></textarea>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="form-group">
+                      <button type="submit" id="contSubmit" class="st-btn btn-bordered">Send Message</button>
+                    </div>
+                  </div>
+                </form><!-- %% End CONTACT FORM %% -->
+    	
+            
+            </div>
+            
+    </body>
+   </html>
